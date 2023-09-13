@@ -10,7 +10,8 @@ pipeline {
                 
                 echo 'Hello World2'
 
-                PowerShell -Command '&winver'
+                def status = powershell(returnStatus: true, script: 'winver')
+                println status
             }
         }
     }
