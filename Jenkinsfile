@@ -10,7 +10,7 @@ pipeline {
                 
                 echo 'Hello World2'
 
-                powershell '&winver'
+                powershell 'winver'
             }
         }
     }
