@@ -1,3 +1,4 @@
+@Library("training_lib") _
 pipeline {
     agent { label 'local_agent' }
 
@@ -10,8 +11,7 @@ pipeline {
                 
                 echo 'Hello World2'
 
-                def status = powershell(returnStatus: true, script: 'winver')
-                println status
+                hello_world()
             }
         }
     }
