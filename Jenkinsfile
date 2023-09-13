@@ -11,7 +11,7 @@ pipeline {
                 
                 echo 'Hello World2'
 
-                hello_world.info
+                hello_world.info 'bajs'
             }
         }
     }

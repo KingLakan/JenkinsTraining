@@ -1,3 +1,3 @@
-def info(){
-    echo 'HelloWorldbajs'
+def info(message) {
+    echo "INFO: ${message}"
 }
