@@ -6,7 +6,9 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
-        }
+            steps {
+                echo 'hello 2'    
+            }
     }
 }
 
