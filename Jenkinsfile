@@ -10,8 +10,9 @@ pipeline {
                 echo 'Hello World1'
                 
                 echo 'Hello World2'
-
-                hello_world.info 'bajs'
+                script {
+                    hello_world.info 'bajs'
+                }
             }
         }
     }
