@@ -1,4 +1,4 @@
-@Library("training_lib") _
+// @Library("training_lib") _
 pipeline {
     agent { label 'local_agent' }
 
@@ -10,10 +10,10 @@ pipeline {
                 echo 'Hello World1'
                 
                 echo 'Hello World2'
-                script {
-                    hello_world.info 'bajs'
-                    hello_world.info1 'kiss'
-                }
+                // script {
+                //     hello_world.info 'bajs'
+                //     hello_world.info1 'kiss'
+                // }
             }
         }
     }
