@@ -2,10 +2,10 @@
 
 def myFunction() {
     echo "Building"
-    echo "{WORKSPACE}"
+    echo "${WORKSPACE}"
     dir('Build'){
         sh 'cmake ..'
-        echo "{WORKSPACE}"
+        echo "${WORKSPACE}"
     }
 
     dir('Build'){
