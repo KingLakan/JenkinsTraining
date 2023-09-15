@@ -14,7 +14,7 @@ pipeline {
                     hello_world.info 'bajs'
                     hello_world.info1 'kiss'
                     // def buildScipt = load '/src/build.groovy'
-                    src.building.runBuild()
+                    building.runBuild()
                 }
             }
         }
