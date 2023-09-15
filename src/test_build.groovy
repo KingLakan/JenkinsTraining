@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
-def runBuild() {
+def runBuildd() {
     echo "Src/build"
 }
