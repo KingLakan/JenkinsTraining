@@ -2,11 +2,11 @@
 
 def myFunction() {
     echo "Building"
-    dir('../Build'){
+    dir('Build'){
         sh 'cmake ..'
     }
 
-    dir('../Build'){
+    dir('Build'){
         sh 'make'
     }
 }
