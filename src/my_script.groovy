@@ -7,6 +7,6 @@ def myFunction() {
     }
 
     dir('Build'){
-        c:\MinGW\bin\mingw32-make.exe
+        bat "c:\\MinGW\\bin\\mingw32-make.exe"
     }
 }
