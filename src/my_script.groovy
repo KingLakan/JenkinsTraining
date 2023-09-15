@@ -1,5 +1,12 @@
 #!/usr/bin/env groovy
 
 def myFunction() {
-    echo "Src build"
+    echo "Building"
+    dir('../Build'){
+        sh 'cmake ..'
+    }
+
+    dir('../Build'){
+        sh 'make'
+    }
 }
