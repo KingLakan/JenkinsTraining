@@ -13,8 +13,8 @@ pipeline {
                 script {
                     hello_world.info 'bajs'
                     hello_world.info1 'kiss'
-                    // def buildScipt = load '/src/build.groovy'
-                    test_build.runBuildd()
+                    def buildScipt = load '/src/test_build.groovy'
+                    buildScipt.runBuildd()
                 }
             }
         }
