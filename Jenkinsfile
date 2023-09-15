@@ -1,4 +1,4 @@
-// @Library("training_lib") _
+@Library("training_lib") _
 pipeline {
     agent { label 'local_agent' }
 
