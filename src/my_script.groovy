@@ -1,15 +1,12 @@
 #!/usr/bin/env groovy
 
 def myFunction() {
-    echo "Building"
-    echo "${WORKSPACE}"
+    echo "Building ${WORKSPACE}"
     dir('Build'){
         sh 'cmake .. -G "MinGW Makefiles"'
-        echo "${WORKSPACE}"
     }
 
     dir('Build'){
-        sh 'make'
-        echo "{WORKSPACE}"
+        sh 'C:\MinGW\bin\mingw32-make.exe'
     }
 }
