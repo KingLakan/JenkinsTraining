@@ -4,7 +4,7 @@ def myFunction() {
     echo "Building"
     echo "${WORKSPACE}"
     dir('Build'){
-        sh 'cmake ..'
+        sh 'cmake .. -G "MinGW Makefiles"'
         echo "${WORKSPACE}"
     }
 
