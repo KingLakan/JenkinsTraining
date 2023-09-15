@@ -13,8 +13,8 @@ pipeline {
                 script {
                     hello_world.info 'bajs'
                     hello_world.info1 'kiss'
-                    def myscript = load 'src/my_script.groovy'
-                    myscript.myFunction()
+                    def myScript = new my_script()
+                    myScript.myFunction()
                 }
             }
         }
